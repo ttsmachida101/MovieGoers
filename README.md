@@ -32,5 +32,6 @@ and allows them to select seats and buy tickets online. The application allows m
   which we implemented.
   
  ## Authors
-  GROUP N
+  Tino Machida, KJ, Joe and Erin
+  
   
