@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="comp3350.MovieGoers">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".presentation.MainActivity"
+            android:label="Select your Movie">
+        </activity>
+        <activity
+            android:name=".presentation.TheatreActivity"
+            android:label="Select your Theatre" />
+        <activity android:name=".presentation.EventActivity" />
+        <activity android:name=".presentation.ConcessionActivity"
+                  android:label="Select your Snacks" />
+        <activity android:name=".presentation.PurchaseActivity" />
+        <activity android:name=".presentation.SplashIntro">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".presentation.OrderActivity" />
+        <activity android:name=".presentation.LoginActivity" />
+        <activity android:name=".presentation.RegisterActivity" />
+        <activity android:name=".presentation.PickScreenActivity" />
+        <activity android:name=".presentation.ProfileActivity"/>
+        <activity android:name=".presentation.EditProfileImageActivity"/>
+
+    </application>
+
+</manifest>

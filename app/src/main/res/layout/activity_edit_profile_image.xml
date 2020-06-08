@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/profile_backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="backButton"
+        android:text="Back" />
+
+    <ImageButton
+        android:id="@+id/editProfileImage_button1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/profile_backButton"
+        android:layout_marginTop="22dp"
+        android:layout_toEndOf="@+id/profile_backButton"
+        android:layout_toRightOf="@+id/profile_backButton"
+        android:scaleType="fitXY"
+        android:onClick="editImageButton1"
+        app:srcCompat="@drawable/movie_icon1" />
+
+    <ImageButton
+        android:id="@+id/editProfileImage_button2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignTop="@+id/editProfileImage_button1"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_toEndOf="@+id/editProfileImage_button3"
+        android:layout_toRightOf="@+id/editProfileImage_button3"
+        android:scaleType="fitXY"
+        android:onClick="editImageButton2"
+        app:srcCompat="@drawable/movie_icon2" />
+
+    <ImageButton
+        android:id="@+id/editProfileImage_button3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/editProfileImage_button1"
+        android:layout_alignStart="@+id/editProfileImage_button1"
+        android:layout_below="@+id/editProfileImage_button1"
+        android:layout_marginTop="76dp"
+        android:scaleType="fitXY"
+        android:onClick="editImageButton3"
+        app:srcCompat="@drawable/movie_icon3" />
+
+    <ImageButton
+        android:id="@+id/editProfileImage_button4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignLeft="@+id/editProfileImage_button2"
+        android:layout_alignStart="@+id/editProfileImage_button2"
+        android:layout_alignTop="@+id/editProfileImage_button3"
+        android:scaleType="fitXY"
+        android:onClick="editImageButton4"
+        app:srcCompat="@drawable/movie_icon4" />
+
+</RelativeLayout>

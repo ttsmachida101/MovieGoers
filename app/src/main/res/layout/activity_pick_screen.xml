@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="comp3350.MovieGoers.presentation.PickScreenActivity">
+
+    <Button
+        android:id="@+id/split_moviesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="410dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:onClick="moviesButton"
+        android:text="Movies"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/split_profileButton"
+        android:layout_width="wrap_content"
+        android:layout_height="410dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:onClick="profileButton"
+        android:text="Profile"
+        android:textSize="24sp" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/theatreListView"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:layout_margin="1dp"
+        >
+
+        <ImageView
+            android:id="@+id/theaterLogo"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/l0" />
+
+            <TextView
+                android:id="@+id/theaterAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="left|top"
+                android:paddingLeft="30dp"
+
+                android:text="Polo Park Shopping Center\n817 St James St, Winnipeg, MB R3G 3L3"
+                android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/theatreBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:gravity="center|center"
+            android:onClick="clickMe1"
+            android:text="Check Availability"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</RelativeLayout>

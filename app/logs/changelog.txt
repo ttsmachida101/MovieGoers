@@ -1,0 +1,251 @@
+COMP3550 Group N
+Member:			        student#
+Kyungjoo Choi(KJ)		7661147
+
+2018 Jan.29
+KJ      0.5hr
+    -create the project
+    -connect to github
+    *Joe invited to collaborator
+    *Joe accept the invitation
+
+2018 Jan.30
+KJ      0.0hr
+    *Erin invited to collaborator
+    *Erin accept the invitation
+
+2018 Feb.06
+KJ      4.0hr
+	-Created log file
+	-Created Data Class(Movie, Schedule, Theatre, Screen, Ticket)
+	    done: constructor, getter, setter, toString
+	    tobe: some little tweek needs to be made as project goes.
+	-Created Database Class
+	    done: constructor
+	    tobe: add other access(manipulate date) methods
+
+2018 Feb.07
+KJ      3.0hr
+    *Tino invited to collaborator
+    -Database Class
+        done: open() methods, setup initial demo data
+                other access methods
+        tobe: add more access methods
+    -created MovieTest class
+    -created AccessMovie class
+        done: getMovie()
+    -created AccessTheatre, AccessSchedule, AccessTicket class; no implementation yet.
+
+    TBD: more testClass needed
+
+2018 Feb.09
+KJ      3.0hr
+    -basic getter and constructor for all Access_____ class
+    -change name of the project
+    -created MainActivity
+        -tried to make this home screen, but somehow runtime error
+    -create movie_item layout
+    -add 5 posters
+
+2018 Feb.10
+KJ      5.0hr
+    *Matt invited to collaborator
+    -fix the the crash and successfully change the default screen to MainActivity
+    --commit--
+    -add custom adaptor for movie list
+    -add Listview for list of movies to Main activity
+    -some adjustment on listItem appearances
+    --commit-- --push--
+    -theatre activity is created
+
+    TBD: find way if book button is clicked, go to theatre select activity
+
+2018 Feb.11
+KJ      6.0hr
+    -create two Activities; TheatreActivity, ScheduleActivity
+    -create three custom adaptors; MovieAdaptor, TheatreAdaptor, ScheduleAdaptor
+    -create layout associated
+    -action bar title added
+
+2018 Feb.11
+Joe
+    - renamed Service class to AccessData class
+        - renamed various AccessData methods
+    - removed all SRSYS application code
+    - added ratings bar to movie view, preset with the appropriate movie rating taken from database stub
+    - on initial screen, buttons now labelled 'view theatres' instead of 'book'
+    - added ticket booking summary screen
+
+=======
+2018 Feb 11
+Erin
+    -added 5 test classes for now, you'll find them under app\src\test\java\comp3350\MovieGoers\objectTests\..
+    -hopefully this merge and push(?) works and doesn't mess anything up :^)
+
+2018 Feb 12
+Joe
+    - simplified database stub according to attached ER model
+    - all business logic is now static rather than object-oriented
+    - code should be simpler to read and understand
+
+2018 Feb 13
+Erin
+    -edited the object tests to match the newly edited objects
+    -deleted tests from the example code
+
+Erin
+2018 Feb 13
+    -gonna try to push files that didnt update properly earlier (the objectTests + 1 business Test that's WIP)
+
+2018 Feb 13
+Joe
+    - fixed a bug in Event.displayTime()
+    - added functionality to summary screen button, returning viewer to the movie list
+
+Erin
+2018 Feb 13
+    -changed toString in movies to not include the duration [return title +"("+duration+"mins)"; -> return title]
+    -bugfix in AccessEvents:
+        while(e.getID() != list.get(i).getID())
+             i++;
+    -> while(i < list.size() && e.getID() != list.get(i).getID())
+            i++;
+     was an infinite loop before
+     -added AccessEventTest
+
+2018 Feb 13
+Joe
+    - MainActivity optimized for Nexus 7
+        - movie posters are now found within drawable-xxhdpi (drawable should no longer be used)
+    - other MainActivity changes: added MovieGoers title, rescaled buttons
+    - added additional movie to stub
+    - added test to test suite
+
+2018 Mar 4
+Joe
+    - added SQL database to application
+        - model and queries still in preliminary stages; can be optimized later
+        - still need to implement concession, customer, ticket, and screen storage
+        - removed stub (should be tweaked and integrated again later)
+    - activities now pass object IDs instead of indexes
+        - theatres are no longer obligated to play all movies
+        - objects should be passed directly later, through Serializable or Parcelable interfaces to avoid redundant queries
+    - replaced AccessData in Application with DataManager in business
+
+2018 Mar 6
+KJ
+    -add Splash screen before app starts
+
+2018 Mar 6
+ Tino
+  - Added additional accessor methods to concessions class
+    - getSize(), getAddon()
+     - Fixed Bug with Concessions constructor
+  - Created testing class for Concessions - ConcessionsTest.Java
+    - Commenced testing for sizes
+     - Commenced testing for Concessions
+
+Matt
+    -added Concessions object
+
+2018 Mar 7
+Matt
+    - revised concessions object to be based on combos instead of item type and size
+    - added AccessConcessions
+    - added code for Concessions into DataAccessor
+    - added Concessions code to SQL Database
+    - added Concessions content to Database
+
+2018 Mar 7
+Tino
+    - Preliminary concessions test class iterated to match new specs
+    - Concessions Queries added to memory table
+    - added mock Customer class (needs refinement to specs)
+    - Concessions additions added to stub
+    - Events added to memory table
+
+2018 Mar 9
+Tino
+    - added multiple accesors to allow for guest account
+    - refined mock Customer class ( still needs refinement to specs)
+
+2018 Mar 10
+Joe
+    - completed concession presentation; activity and adapter
+        - fixed concession queries
+
+2018 Mar 11
+Erin
+    -added Customer class
+    -added AccessCustomer class
+    -added Customers table to Database
+    -added addCustomer/searchCustomer methods to DataAccessor and the interface
+    -added CustomerTest
+    -added OrderActivity - it's in place of ConcessionActivity and the summary(PurchaseActivity)
+    -added activity_order.xml
+    -cleaned up some code
+
+2018 Mar 11
+Erin
+    -small fixes
+
+2018 Mar 12
+KJ
+    -add & update ALL Objects classes test.java
+    -more detail testing of Event class and its method(timeDisplay & book/cancelSeats)
+KJ
+    -clone database stub
+    -update object tests
+
+2018 Mar 13
+KJ
+    -FINISH ALL THE TESTING!! YAY
+        Choosing between sqlDB & dbStub
+        Can configure from DataAccessor
+        Can configure from AllTests
+
+2018 Mar 13
+Erin
+    -updated stub
+    -small fixes
+
+2018 Mar 17
+Erin
+    -fixed searchCustomer, wasn't the correct if statement to check if the result was null
+    -added checking for valid customer information in OrderActivity
+
+2018 Mar 24
+Erin
+    -added login screen
+    -added register screen
+    -added guest functionality
+    -added ProcessInput class for error checking and processing input
+    -added a screen to split between user profile and movie purchases
+    -moved methods for accessing db to the splash screen
+    -reworked OrderActivity
+    -added an InputHelper class
+    -CustomerState class for keeping track of Guest/current Customer
+    -added password to customer class
+
+2018 Mar 25
+Joe
+    - added ticket & concession queries (untested)
+
+2018 Mar 27
+Erin
+    -profile screen code added
+    -profile images/choosing images works
+
+2018 Mar 27
+KJ
+    -OrderActivity if user is login, prefill the payment info
+    -profile images/choosing images stays
+    -Testings are done!
+        Unit Testing
+        Integration Testing
+            Injection works perfect
+
+    -Add Acceptance Testing
+        1. Register and Login
+        2. Book ticket
+        3. Edit Profile and check Booking History

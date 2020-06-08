@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="comp3350.MovieGoers.presentation.OrderActivity">
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="570dp"
+        android:layout_height="59dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:onClick="submitButton"
+        android:text="Confirm Purchase"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="722dp" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/submitButton"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/submitButton"
+        android:layout_marginTop="18dp"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:text="Payment Information" />
+
+    <TextView
+        android:id="@+id/fNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/title"
+        android:layout_alignStart="@+id/title"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="73dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="First Name" />
+
+    <TextView
+        android:id="@+id/lNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fNameBox"
+        android:layout_alignLeft="@+id/lNameBox"
+        android:layout_alignStart="@+id/lNameBox"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Last Name" />
+
+    <TextView
+        android:id="@+id/ccView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fNameBox"
+        android:layout_alignStart="@+id/fNameBox"
+        android:layout_below="@+id/fNameBox"
+        android:layout_marginTop="22dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Credit Card Number" />
+
+    <TextView
+        android:id="@+id/cvvView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ccNumBox"
+        android:layout_alignEnd="@+id/lNameView"
+        android:layout_alignRight="@+id/lNameView"
+        android:text="CVV"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fNameBox"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fNameView"
+        android:layout_alignStart="@+id/fNameView"
+        android:layout_below="@+id/fNameView"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/lNameBox"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ccView"
+        android:layout_toEndOf="@+id/ccNumBox"
+        android:layout_toRightOf="@+id/ccNumBox"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/ccNumBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ccView"
+        android:layout_alignStart="@+id/ccView"
+        android:layout_below="@+id/ccView"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Credit Card Number"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/cvvBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ccNumBox"
+        android:layout_alignEnd="@+id/cvvView"
+        android:layout_alignLeft="@+id/cvvView"
+        android:layout_alignRight="@+id/cvvView"
+        android:layout_alignStart="@+id/cvvView"
+        android:ems="10"
+        android:hint="CVV"
+        android:inputType="textPersonName"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/subtotalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/totalView"
+        android:layout_centerHorizontal="true"
+        android:text="subtotal"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/totalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/submitButton"
+        android:layout_centerHorizontal="true"
+        android:text="total"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/summaryView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/subtotalView"
+        android:layout_marginBottom="127dp"
+        android:layout_toLeftOf="@+id/summaryView2"
+        android:layout_toStartOf="@+id/summaryView2"
+        android:text="summary"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/summaryView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/summaryView"
+        android:layout_alignBottom="@+id/summaryView"
+        android:layout_toEndOf="@+id/ccNumBox"
+        android:layout_toRightOf="@+id/ccNumBox"
+        android:text="summary2"
+        android:textSize="18sp" />
+</RelativeLayout>
