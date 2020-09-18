@@ -1,7 +1,7 @@
 # MovieGoers-READ ME
 
 ## About
-MovieGoer is mobile application which allows users to view screening movies, their screening times, screening locations
+MovieGoers is mobile application which allows users to view screening movies, their screening times, screening locations
 and allows them to select seats and buy tickets online. The application allows movie goers to also buy concessions in advance and simply pick them up uopn arrival.
 
 ## Overview
