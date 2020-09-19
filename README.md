@@ -6,9 +6,10 @@ and allows them to select seats and buy tickets online. The application allows m
 
 ## Overview
   Our submission file consists of 3 packages, two of them which are test packages. 
-  Within our main implementation package we have the main folders persistence,Business(new), presentation, logs, objects and business. 
+  Within our main implementation package we have the main folders for
+  -Persistence, Business(new), Presentation, Logs, Objects and Business. 
 
-  The persistence folder contains a mock database(updated to include concessions and event) of all the movies within our system(Events). The reason why we re-named this "Events" is to allow for re-usability and scalability in the event that we expand from movie tickets to concerts, shows and so on. Within the mock database we also have a list of the locationas available for viewing movies (theatres). Persistance also allows injection such that it can be made from DataAccessor interface. Each theatre has a screen associated with it. Each theatre also has a specific set of concessions associated with it. 
+ The persistence folder contains a mock database(updated to include concessions and event) of all the movies within our system(Events). The reason why we re-named this "Events" is to allow for re-usability and scalability in the event that we expand from movie tickets to concerts, shows and so on. Within the mock database we also have a list of the locationas available for viewing movies (theatres). Persistance also allows injection such that it can be made from DataAccessor interface. Each theatre has a screen associated with it. Each theatre also has a specific set of concessions associated with it. 
   
   The logs file contains the project logs which contains all of our logging information.
   The presentation folder contains our GUI objects for display. We have added a few new screens to our interface 
@@ -25,10 +26,13 @@ and allows them to select seats and buy tickets online. The application allows m
   
   
 ## Features
-  Upon startup, the application shows a splash screen with the app-logo and you're given the choice of going to your profile screen or go to the list of movies avaiable. The movies list screen contains what is the list of movies which are currently playing in various locations.
-  Each movie title is accompanied by a (poster) and a rating for the movie. This is was one of our key tasks, for the user to be able 
-  to see the list of movies playing. Upon selecting a movie or selecting view theaters, the theaters where the movie is playing are showing.
-  Upon selecting a location, the user can view the times and seat availability of the particular location. After this the customer can view the available seats for a selected location. If there are seats available the customer can book a seatm if not he will be notified of the full capacity and requested to select another screen(new). After booking a seat the customer can now pick some concessions from a list of carefully selected combinations of concessions (new). After picking these, the customer can proceed to pay for their bill(new). They will have to enter their credit card information and then from there they can view a summary of their ticket and the summary.  Another key developer task 
+  -Upon startup, the application shows a splash screen with the app-logo and you're given the choice of going to your profile screen or go to the list of movies avaiable. 
+  -The movies list screen contains what is the list of movies which are currently playing in various locations.
+  -Each movie title is accompanied by a (poster) and a rating for the movie. This is was one of our key tasks, for the user to be able 
+  to see the list of movies playing. 
+  -Upon selecting a movie or selecting view theaters, the theaters where the movie is playing are showing.
+  -Upon selecting a location, the user can view the times and seat availability of the particular location. After this the customer can view the available seats for a selected location. 
+  -If there are seats available the customer can book a seatm if not he will be notified of the full capacity and requested to select another screen(new). After booking a seat the customer can now pick some concessions from a list of carefully selected combinations of concessions (new). After picking these, the customer can proceed to pay for their bill(new). They will have to enter their credit card information and then from there they can view a summary of their ticket and the summary.  Another key developer task 
   which we implemented.
   
  ## Authors
